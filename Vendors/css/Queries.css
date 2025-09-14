@@ -1,0 +1,379 @@
+@media only screen and (max-width: 1024px) {
+  .hero-content {
+    padding: 3rem 2rem;
+    margin: 0 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .services-section {
+    padding: 30px 50px 30px;
+  }
+
+  .newsheading h1 {
+    width: 90%;
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    gap: 1rem;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-content {
+    margin: 0;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.5rem, 2vw, 3rem);
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn.secondary {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .hero-img img {
+    max-height: 60vh;
+    width: auto;
+  }
+
+  .achievements {
+    padding: 20px 10px;
+  }
+
+  .achievements h1 {
+    font-size: 2rem;
+  }
+
+  .achievements-container {
+    gap: 20px;
+  }
+
+  .achievement h3 {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+  }
+
+  /* services */
+
+  .services-section {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .services,
+  .cart {
+    line-height: 1.4;
+    padding: 0px 10px;
+  }
+
+  .services h1 {
+    font-size: 2rem;
+  }
+
+  .services p {
+    font-size: 0.8rem;
+  }
+
+  .service-item {
+    font-size: 0.7rem;
+  }
+
+  button {
+    border: none;
+    padding: 3px 6px;
+    margin-left: 4px;
+  }
+
+  .cart h3 {
+    font-size: 2rem;
+    margin: 30px 0px 0px;
+  }
+
+  .book-now h3 {
+    font-size: 1.4rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .total {
+    font-size: 1rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  input,
+  button[type="submit"] {
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+
+  .quality {
+    gap: 2rem;
+    max-width: 100%;
+    height: auto;
+    font-size: 1rem;
+    margin: 2rem 2rem;
+    padding: 1rem 0;
+  }
+
+  .service img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .service h2 {
+    margin: 1rem 0;
+  }
+
+  .service p {
+    font-size: 0.8rem;
+  }
+
+  /* newsletter */
+  .newsletter {
+    padding: 25px;
+
+  }
+
+  .newsheading h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  #newsform {
+    width: 100%;
+  }
+
+  .formContainer {
+    padding: 10px 0;
+  }
+
+  .input-row input {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  #sbs-btn {
+    max-width: 47%;
+    padding: 8px;
+
+  }
+
+  .footer-section {
+    font-size: 0.8rem;
+    padding: 1.8rem 0;
+  }
+
+  .footer-div {
+    width: 170px;
+  }
+
+  .footer-section img {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-div h3 {
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+  .navbar {
+    /* flex-direction: column; */
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 10px 20px 0px 10px;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+  }
+
+  .hero-text p {
+    font-size: 0.7rem;
+  }
+
+  .btn.secondary {
+    font-size: 0.8rem;
+  }
+
+  .hero-img img {
+    max-height: 50vh;
+    width: auto;
+  }
+
+  /* Achievements */
+  .achievements {
+    flex-direction: column;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+
+  .achievements-container {
+    gap: 20px;
+  }
+
+  .achievements h1 {
+    margin: 10px 0 10px;
+  }
+
+  /* Services Section */
+  .services-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .services h1 {
+    font-size: 1.8rem;
+  }
+
+  .cart h3 {
+    font-size: 1.8rem;
+  }
+
+  /* Quality Grid */
+  .quality {
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .service img {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* Newsletter Section */
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7rem;
+    padding-bottom: 0px;
+  }
+
+  .newsheading h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .formContainer {
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  #newsform {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .input-row {
+    gap: 10px;
+  }
+
+  #sbs-btn {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-div {
+    width: 100%;
+  }
+
+  .social-links {
+    float: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .newsletter {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .formContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #newsform {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

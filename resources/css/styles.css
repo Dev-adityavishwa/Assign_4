@@ -1,0 +1,443 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+header {
+  padding: 10px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 5px 5px 5px rgb(173, 168, 168);
+  border-radius: 10px;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: #2bd0d0;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: #2bd0d0;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: #07b8e0;
+}
+
+.btn.secondary {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  background: rgb(17, 219, 219);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 3rem 6rem;
+  margin: 0 3rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+}
+
+.hero-text .highlight {
+  color: aqua;
+}
+
+.hero-img img {
+  max-height: 70vh;
+  width: auto;
+}
+
+/* achievement________ */
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  background: #36a3f7;
+  color: #111;
+  padding: 40px 20px;
+}
+
+.achievements h1 {
+  font-size: clamp(2.5rem, 2vw, 2.5rem);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap;   for mobile */
+  gap: 40px;
+
+}
+
+.achievement h3 {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.achievement p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  color: #333;
+}
+
+/* servicessss */
+
+.services-section {
+  display: flex;
+  gap: 40px;
+  padding: 30px 100px 30px;
+}
+
+.services,
+.cart {
+  line-height: 1.4;
+  background: #fff;
+  padding: 0px 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin: 15px 0;
+
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.add {
+  background: #e6f0ff;
+  color: #007bff;
+}
+
+.remove {
+  background: #ffe6e6;
+  color: #e63946;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+.cart h3 {
+  font-size: 2.5rem;
+  margin: 30px 0px 0px;
+}
+
+.book-now h3 {
+  font-size: 1.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+button[type="submit"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* disc __ */
+
+.quality {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  margin: 3rem 4rem;
+  padding: 1rem 0;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.service img {
+  height: 100px;
+  width: 100px;
+}
+
+.service h2 {
+  margin: 1.2rem 0;
+}
+
+.service p {
+  font-size: 1.1rem;
+}
+
+
+/* Newsletter Section */
+.newsletter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #3baaf5;   /* blue background */
+  padding: 40px;
+  color: white;
+}
+
+/* Heading side */
+.newsheading {
+  flex: 1;
+  justify-content: center;
+  width: auto;
+}
+.newsheading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+/* Form side */
+.formContainer {
+  flex: 1;
+  display: flex;
+}
+
+#newsform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+/* Inputs row */
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  width: auto;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Subscribe button */
+#sbs-btn {
+  max-width: 48%;
+  margin-left: 0;
+  padding: 12px;
+  background: white;
+  color: #3baaf5;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sbs-btn:hover {
+  background: #e6e6e6;
+}
+
+
+/* footer */
+
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  padding: 2.5rem 0;
+}
+
+.footer-div {
+  width: 200px;
+}
+
+.footer-section img {
+  margin-bottom: 1.5rem;
+}
+
+.footer-div h3 {
+  margin-bottom: 1rem;
+}
+.footer-section ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: black;
+}
+.footer-div .mail{
+  margin-bottom: 0.5rem;
+}
+.footer-div .mail:hover{
+  color: #2bd0d0;
+}
+
+.social-links {
+    list-style: none;
+    float: left;
+}
+
+.footer-div li a:link,
+.footer-div li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #333;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+.footer-div li a:hover {
+  color: #2bd0d0;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+.fb:hover {
+  color: #3b5983;
+}
+
+.google:hover {
+  color: #d72b04;
+}
+
+.twitter:hover {
+  color: #00aced;
+
+}
+
+.insta:hover {
+  color: #517fad;
+}
